@@ -1,127 +1,137 @@
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
 .flex-layout {
-    display: flex;
+  display: flex;
 }
 
 .center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .container {
-    border-top: 5px solid green;
-    border-radius: 5px;
-    box-shadow: 2px 2px gray;
-    width: 60vw;
+  border-top: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 2px 2px gray;
+  width: 60vw;
 }
 
-
 .accordion-title {
-    position: relative;
-    font-size: 1.2rem;
-    border-left: 3px solid rgba(137, 228, 137, 0.8);
-    border-radius: 3px;
-    box-shadow: 1px 1px gray;
-    padding: 5px;
-    cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+  border-left: 3px solid rgba(137, 228, 137, 0.8);
+  border-radius: 3px;
+  box-shadow: 1px 1px gray;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .accordion-title::after {
-    position: absolute;
-    right: 10px;
-    content: '+';
-    transform: rotate(90deg);
-    transition-duration: .3s;
+  position: absolute;
+  right: 10px;
+  content: "+";
+  transform: rotate(90deg);
+  transition-duration: 0.3s;
 }
 
 .accordion-title.active {
-    box-shadow: 1px 0px gray;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  box-shadow: 1px 0px gray;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .accordion-title.active::after {
-    transform: rotate(0deg);
-    transition-duration: .3s;
-    content: '−';
+  transform: rotate(0deg);
+  transition-duration: 0.3s;
+  content: "−";
 }
 
 .accordion-content {
-    opacity: 0;
-    height: 0;
-    padding: 0 1.5em;
-    overflow: hidden;
-    transition-duration: .3s;
+  opacity: 0;
+  height: 0;
+  padding: 0 1.5em;
+  overflow: hidden;
+  transition-duration: 0.3s;
 }
 
 .accordion-content.open {
-    padding: .625em 1.5em;
-    opacity: 1;
-    height: auto;
-    box-shadow: 1px 1px gray;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-left: 3px solid rgba(137, 228, 137, 0.8);
+  padding: 0.625em 1.5em;
+  opacity: 1;
+  height: auto;
+  box-shadow: 1px 1px gray;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: 3px solid rgba(137, 228, 137, 0.8);
 }
 
 .indent {
-    padding-left: 1.2rem;
+  padding-left: 1.2rem;
 }
 
 .table {
-    display: table;
+  display: table;
 }
 
 .table-c {
-    display: table-cell;
+  display: table-cell;
 }
 
 .name {
-    width: 6rem;
-    margin-right: 20px;
-    text-align: end;
+  width: 6rem;
+  margin-right: 20px;
+  text-align: end;
 }
 
 .annotation {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .description {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
-.project, .technique {
-    margin-bottom: 10px;
+.project,
+.technique {
+  margin-bottom: 10px;
 }
 
 #main-title {
-    text-align: center;
-    font-size: 2rem;
+  padding-right: 10px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-#introduction-area, #carrer-area, #project-area, #technique-area {
-    padding: 10px;
+#introduction-area,
+#carrer-area,
+#project-area,
+#technique-area {
+  padding: 10px;
 }
 
 .photo-container {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .photo-container .photo {
-    background-image: url("images/photo.jpg");
-    border-radius: 50%;
-    background-position: center center;
-    width: 80px;
-    height: 80px;
+  background-image: url("images/photo2.jpg");
+  background-size: 112px;
+  border-radius: 50%;
+  background-position: top 1340px left -339px;
+  width: 100px;
+  height: 100px;
 }
 
 #link-area {
-    margin-top: 5px;
-    padding: 8px;
-    justify-content: space-between;
+  margin-top: 5px;
+  padding: 8px;
+  justify-content: space-between;
 }
 
 .logo {
-    width: 1.5rem;
+  width: 1.5rem;
 }
